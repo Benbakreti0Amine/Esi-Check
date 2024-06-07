@@ -1,0 +1,17 @@
+options: QueryOptions(
+                document: gql(GraphQl.quizPropaList),
+              ),
+              builder: (QueryResult? result,
+                  {VoidCallback? refetch, FetchMore? fetchMore}) {
+                if (result?.hasException == true) {
+                  return Text(result!.exception.toString());
+                }
+
+                if (result?.isLoading == true) {
+                  return Center(child: CircularProgressIndicator());
+                }
+                final List<dynamic>? quizes = result?.data?['quizPropaList'];
+                // print(quizes);
+                filtredQuizes = quizes!
+                    .where((element) => element['userid'] == widget.id)
+                    .toList();
