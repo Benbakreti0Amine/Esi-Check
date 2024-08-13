@@ -30,6 +30,6 @@ Prerequisites
 Acknowledgements
 
 We are grateful to our entire team and our esteemed professor, Ossama Serhane, for their hard work and expertise. Their dedication made this project possible.
-Contact
+
 
 If you're interested in learning more about Esi-Check or exploring collaborations, please reach out to us. Let's join forces to shape the future of education.
